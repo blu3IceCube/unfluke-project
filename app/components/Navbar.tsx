@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaCircleUser, FaBell, FaCircle, FaCaretDown } from "react-icons/fa6";
-import { SiWindows } from "react-icons/si";
 
 const navlinks = [
   {

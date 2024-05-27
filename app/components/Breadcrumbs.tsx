@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useState } from "react";
+import React from "react";
+import { GoHome } from "react-icons/go";
 
 const Breadcrumbs = () => {
   const pathname = usePathname();
@@ -11,8 +12,8 @@ const Breadcrumbs = () => {
     <nav className="bg-gray-100 py-3 px-5 rounded-md w-full mb-4">
       <ol className="list-reset flex text-grey-dark">
         <li>
-          <Link href="/">
-            <a className="text-blue-600 hover:text-blue-700">Home</a>
+          <Link href="/" className="text-blue-600 hover:text-blue-700">
+            <GoHome />
           </Link>
         </li>
         {pathnames.map((value, index) => {
@@ -27,8 +28,8 @@ const Breadcrumbs = () => {
           ) : (
             <li key={to}>
               <span className="mx-2">/</span>
-              <Link href={to}>
-                <a className="text-blue-600 hover:text-blue-700">{value}</a>
+              <Link href={to} className="text-blue-600 hover:text-blue-700">
+                {value}
               </Link>
             </li>
           );
