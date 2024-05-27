@@ -1,10 +1,11 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 
-const Layout = () => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <Navbar />
+      {children}
     </>
   );
 };
