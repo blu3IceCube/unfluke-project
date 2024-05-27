@@ -8,11 +8,11 @@ import { GoHome } from "react-icons/go";
 const Breadcrumbs = () => {
   const pathname = usePathname();
   const pathnames = pathname.split("/").filter((x) => x);
+  const title = pathnames[-1];
+  console.log(title);
   return (
     <nav className="py-3 rounded-md w-full mb-4 mt-[50px]">
-      <span className="text-xl font-bold">
-        {pathnames[-1][0].toUpperCase() + pathnames[-1].slice(1)}
-      </span>
+      <span className="text-xl font-bold"></span>
       <ol className="list-reset flex text-grey-dark">
         <li className="text-[22px]">
           <Link href="/" className="text-blue-600 hover:text-blue-700">
