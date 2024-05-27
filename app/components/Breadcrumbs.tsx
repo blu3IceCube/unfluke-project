@@ -10,6 +10,9 @@ const Breadcrumbs = () => {
   const pathnames = pathname.split("/").filter((x) => x);
   return (
     <nav className="py-3 rounded-md w-full mb-4 mt-[50px]">
+      <span className="text-xl font-bold">
+        {pathnames[-1][0].toUpperCase() + pathnames[-1].slice(1)}
+      </span>
       <ol className="list-reset flex text-grey-dark">
         <li className="text-[22px]">
           <Link href="/" className="text-blue-600 hover:text-blue-700">
@@ -21,12 +24,12 @@ const Breadcrumbs = () => {
           const isLast = index === pathnames.length - 1;
 
           return isLast ? (
-            <li key={to} className="text-gray-500 text-[22px]">
+            <li key={to} className="text-gray-500">
               <span className="mx-2">/</span>
               {value}
             </li>
           ) : (
-            <li key={to} className="text-[22px]">
+            <li key={to}>
               <span className="mx-2">/</span>
               <Link href={to} className="text-blue-600 hover:text-blue-700">
                 {value}
