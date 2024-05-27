@@ -3,13 +3,14 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-center w-full h-16 border-b border-slate-800">
-      <div className="flex items-center h-full w-4/5 justify-between">
+    <div className="flex flex-col items-center justify-center w-full h-16">
+      <div className="flex items-center h-full w-4/5 justify-between border-b">
         <div>
-          <Image src="/assets/logo.png" alt="logo" width={180} height={180} />
+          <Image src="/assets/logo.png" alt="logo" width={150} height={150} />
         </div>
         <div>user, noti and coins</div>
       </div>
+      <div>nav links</div>
     </div>
   );
 };
