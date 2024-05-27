@@ -51,10 +51,10 @@ const Navbar = () => {
           </div>
           <div>user, noti and coins</div>
         </div>
-        <div className="flex items-center justify-between">
+        <div className="flex items-center w-full pt-3 gap-6">
           {navlinks.map((item) => (
             <Link href={item.link}>
-              <span className="font-medium font-lg">{item.title}</span>
+              <span className="font-semibold font-lg">{item.title}</span>
             </Link>
           ))}
         </div>
