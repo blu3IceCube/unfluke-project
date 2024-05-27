@@ -2,10 +2,17 @@
 
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const Breadcrumbs = () => {
   const router = useRouter();
-  const pathnames = router.pathname.split("/").filter((x) => x);
+  const [pathnames, setPathnames] = useState([""]);
+
+  useEffect(() => {
+    if (router.isReady) {
+      setPathnames(router.pathname.split("/").filter((x) => x));
+    }
+  }, [router.isReady, router.pathname]);
 
   return (
     <nav className="bg-gray-100 py-3 px-5 rounded-md w-full mb-4">
