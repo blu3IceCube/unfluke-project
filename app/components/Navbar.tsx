@@ -44,8 +44,8 @@ const navlinks = [
 const Navbar = () => {
   return (
     <div className="flex items-center justify-center w-full">
-      <div className="flex flex-col items-center w-[91%] justify-center border-b pb-1.5">
-        <div className="flex items-center w-full justify- between">
+      <div className="flex flex-col items-center w-[91%] justify-center">
+        <div className="flex items-center w-full justify-between border-b pb-1.5">
           <div>
             <Image src="/assets/logo.png" alt="logo" width={150} height={150} />
           </div>
