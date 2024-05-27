@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { FaCircleUser, FaBell, FaCircle, FaCaretDown } from "react-icons/fa6";
+import { SiWindows } from "react-icons/si";
 
 const navlinks = [
   {
@@ -49,7 +50,19 @@ const Navbar = () => {
           <div>
             <Image src="/assets/logo.png" alt="logo" width={150} height={150} />
           </div>
-          <div>user, noti and coins</div>
+          <div className="flex gap-3">
+            <span>
+              <FaBell />
+              <FaCaretDown />
+            </span>
+            <span>
+              <FaCircle />
+            </span>
+            <span>
+              <FaCircleUser />
+              <FaCaretDown />
+            </span>
+          </div>
         </div>
         <div className="flex items-center w-full pt-3 gap-6">
           {navlinks.map((item) => (
