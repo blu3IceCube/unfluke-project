@@ -3,12 +3,7 @@ import Leaderboard from "./leaderboard/page";
 import Scanners from "./scanners/page";
 
 const App = () => {
-  return (
-    <>
-      <Leaderboard />
-      <Scanners />
-    </>
-  );
+  return <></>;
 };
 
 export default App;
