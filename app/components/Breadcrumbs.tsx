@@ -14,6 +14,11 @@ const Breadcrumbs = () => {
     }
   }, [router.isReady, router.pathname]);
 
+  if (!router.isReady) {
+    // Return null or a loading state if the router is not ready
+    return null;
+  }
+
   return (
     <nav className="bg-gray-100 py-3 px-5 rounded-md w-full mb-4">
       <ol className="list-reset flex text-grey-dark">
