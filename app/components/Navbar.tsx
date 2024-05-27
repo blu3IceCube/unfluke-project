@@ -50,15 +50,15 @@ const Navbar = () => {
           <div>
             <Image src="/assets/logo.png" alt="logo" width={150} height={150} />
           </div>
-          <div className="flex gap-3">
-            <span>
+          <div className="flex gap-10 items-center text-lg text-orange-400">
+            <span className="flex gap-1">
               <FaBell />
               <FaCaretDown />
             </span>
-            <span>
+            <span className="flex gap-1">
               <FaCircle />
             </span>
-            <span>
+            <span className="flex gap-1">
               <FaCircleUser />
               <FaCaretDown />
             </span>
