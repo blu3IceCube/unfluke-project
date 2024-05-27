@@ -8,7 +8,7 @@ import { GoHome } from "react-icons/go";
 const Breadcrumbs = () => {
   const pathname = usePathname();
   const pathnames = pathname.split("/").filter((x) => x);
-  const title = pathnames[-1];
+  const title = pathnames;
   console.log(title);
   return (
     <nav className="py-3 rounded-md w-full mb-4 mt-[50px]">
