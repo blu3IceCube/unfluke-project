@@ -9,6 +9,8 @@ const Breadcrumbs = () => {
   const pathname = usePathname();
   const pathnames = pathname.split("/").filter((x) => x);
   const title = pathnames ? pathnames.slice(-1)[0] : "";
+  console.log(title);
+
   return (
     <nav className="py-3 rounded-md w-full mb-4 mt-[50px]">
       <span className="text-2xl font-semibold min-h-6">

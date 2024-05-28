@@ -6,7 +6,7 @@ const strategies = [
     overallProfit: 381845,
     avgDailyProfit: 319.54,
     winPercentage: 0.65,
-    price: null,
+    price: "-",
     action: "View",
   },
   {
@@ -26,7 +26,7 @@ const strategies = [
     overallProfit: 255425,
     avgDailyProfit: 208.51,
     winPercentage: 0.64,
-    price: null,
+    price: "-",
     action: "View",
   },
   {
@@ -36,7 +36,7 @@ const strategies = [
     overallProfit: 370845,
     avgDailyProfit: 303.47,
     winPercentage: 0.65,
-    price: null,
+    price: "-",
     action: "View",
   },
   {
@@ -46,7 +46,7 @@ const strategies = [
     overallProfit: 370845,
     avgDailyProfit: 303.47,
     winPercentage: 0.65,
-    price: null,
+    price: "-",
     action: "View",
   },
   {
@@ -56,7 +56,7 @@ const strategies = [
     overallProfit: 135980,
     avgDailyProfit: 185.77,
     winPercentage: 0.49,
-    price: null,
+    price: "-",
     action: "View",
   },
   {
@@ -66,7 +66,7 @@ const strategies = [
     overallProfit: 267867.5,
     avgDailyProfit: 218.49,
     winPercentage: 0.6,
-    price: null,
+    price: "-",
     action: "View",
   },
   {
@@ -76,7 +76,7 @@ const strategies = [
     overallProfit: 178252.5,
     avgDailyProfit: 161.9,
     winPercentage: 0.63,
-    price: null,
+    price: "-",
     action: "View",
   },
   {
@@ -86,7 +86,7 @@ const strategies = [
     overallProfit: 176420,
     avgDailyProfit: 137.51,
     winPercentage: 0.65,
-    price: null,
+    price: "-",
     action: "View",
   },
   {
@@ -96,7 +96,7 @@ const strategies = [
     overallProfit: 244555,
     avgDailyProfit: 198.66,
     winPercentage: 0.62,
-    price: null,
+    price: "-",
     action: "View",
   },
 ];
