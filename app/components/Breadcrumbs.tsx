@@ -14,7 +14,9 @@ const Breadcrumbs = () => {
   return (
     <nav className="py-3 rounded-md w-full mb-4 mt-[50px]">
       <span className="text-2xl font-semibold min-h-6">
-        {title && title[0].toUpperCase() + title.slice(1)}
+        {title === undefined
+          ? "Leaderboard"
+          : title[0].toUpperCase() + title.slice(1)}
       </span>
       <ol className="list-reset flex text-grey-dark mt-2.5">
         <li className="text-[22px]">
