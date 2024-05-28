@@ -1,9 +1,10 @@
 import strategies from "@/data";
 import React from "react";
+import { IoTrendingUp } from "react-icons/io5";
 
 const Table = () => {
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full border p-5 rounded-lg mb-[250px]">
       <h1 className="text-2xl font-semibold pb-4">Basic Backtest</h1>
       <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
@@ -71,7 +72,9 @@ const Table = () => {
                       {strategy.name}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-b">
-                      {strategy.calmarRatio}
+                      <span className="p-1.5 border rounded-lg border-green-500 text-green-500">
+                        {strategy.calmarRatio} <IoTrendingUp />
+                      </span>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-b">
                       {strategy.overallProfit}
