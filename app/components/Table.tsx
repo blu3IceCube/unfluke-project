@@ -14,52 +14,76 @@ const Table = () => {
                     scope="col"
                     className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
                   >
-                    Name
+                    Rank
                   </th>
                   <th
                     scope="col"
                     className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
                   >
-                    Title
+                    Calmar Ratio
                   </th>
                   <th
                     scope="col"
                     className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
                   >
-                    Email
+                    Overall Profit
                   </th>
                   <th
                     scope="col"
                     className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
                   >
-                    Role
+                    Avg. Daily Profit
                   </th>
-                  <th scope="col" className="relative px-6 py-3">
-                    <span className="sr-only">Edit</span>
+                  <th
+                    scope="col"
+                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    Win %(Day)
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    Price (Rs)
+                  </th>
+                  <th
+                    scope="col"
+                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                  >
+                    Action
                   </th>
                 </tr>
               </thead>
               <tbody className="divide-y">
-                {strategies.map((user, idx) => (
+                {strategies.map((strategy, idx) => (
                   <tr key={idx}>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-500 border-b">
-                      {user.name}
+                      {strategy.rank}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-b">
-                      {user.overallProfit}
+                      {strategy.name}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-b">
-                      {user.calmarRatio}
+                      {strategy.calmarRatio}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-b">
-                      {user.avgDailyProfit}
+                      {strategy.overallProfit}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-b">
+                      {strategy.avgDailyProfit}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-b">
+                      {strategy.winPercentage}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-b">
+                      {strategy.price}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium border-b">
                       <a
                         href="#"
                         className="text-indigo-600 hover:text-indigo-900"
                       >
-                        Edit
+                        {strategy.action}
                       </a>
                     </td>
                   </tr>
