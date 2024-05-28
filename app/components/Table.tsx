@@ -39,28 +39,22 @@ const Table = () => {
                   </th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody className="divide-y">
                 {strategies.map((user, idx) => (
-                  <tr key={idx} className="divide-y">
-                    <td
-                      className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-500"
-                      style={{
-                        borderTopWidth: "calc(1px* calc(1 - var(0)))",
-                        borderBottomWidth: "calc(1px* var(0));",
-                      }}
-                    >
+                  <tr key={idx}>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-500 border-b">
                       {user.name}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-b">
                       {user.overallProfit}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-b">
                       {user.calmarRatio}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-b">
                       {user.avgDailyProfit}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                    <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium border-b">
                       <a
                         href="#"
                         className="text-indigo-600 hover:text-indigo-900"
