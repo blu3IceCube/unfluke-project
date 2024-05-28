@@ -6,7 +6,7 @@ const Table = () => {
     <div className="flex flex-col w-full">
       <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
-          <div className="overflow-hidden shadow-md sm:rounded-lg">
+          <div className="overflow-hidden">
             <table className="min-w-full">
               <thead className="bg-gray-50">
                 <tr>
@@ -42,7 +42,13 @@ const Table = () => {
               <tbody>
                 {strategies.map((user, idx) => (
                   <tr key={idx} className="divide-y">
-                    <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
+                    <td
+                      className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-500"
+                      style={{
+                        borderTopWidth: "calc(1px* calc(1 - var(0)))",
+                        borderBottomWidth: "calc(1px* var(0));",
+                      }}
+                    >
                       {user.name}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
