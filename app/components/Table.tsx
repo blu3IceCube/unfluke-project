@@ -5,12 +5,18 @@ import { IoTrendingUp } from "react-icons/io5";
 const Table = () => {
   return (
     <div className="flex flex-col w-full border p-5 rounded-lg mb-[250px]">
-      <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-semibold pb-4">Basic Backtest</h1>
+      <div className="flex items-center justify-between pb-4">
+        <h1 className="text-2xl font-semibold">Basic Backtest</h1>
         <div className="flex items-center gap-4 border rounded-lg">
-          <span className="p-2 rounded-l-lg bg-gray-500">Slippage</span>
+          <span className="p-2 rounded-l-lg bg-gray-300">Slippage</span>
           <label className="p-2">
-            <input className="mx-2" type="radio" name="slippage" value="0%" />
+            <input
+              className="mx-2"
+              type="radio"
+              name="slippage"
+              value="0%"
+              checked
+            />
             0%
           </label>
           <label className="p-2">
