@@ -8,15 +8,18 @@ const Table = () => {
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-semibold pb-4">Basic Backtest</h1>
         <div>
-          <input type="radio" name="slippage" value="0%">
+          <label>
+            <input type="radio" name="slippage" value="0%" />
             0%
-          </input>
-          <input type="radio" name="slippage" value="0.5%">
+          </label>
+          <label>
+            <input type="radio" name="slippage" value="0.5%" />
             0.5%
-          </input>
-          <input type="radio" name="slippage" value="1%">
+          </label>
+          <label>
+            <input type="radio" name="slippage" value="1%" />
             1%
-          </input>
+          </label>
         </div>
       </div>
       <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
