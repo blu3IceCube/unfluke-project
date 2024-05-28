@@ -72,8 +72,11 @@ const Table = () => {
                       {strategy.name}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-b">
-                      <span className="p-1.5 border rounded-lg border-green-500 text-green-500">
-                        {strategy.calmarRatio} <IoTrendingUp />
+                      <span className="p-1.5 border rounded-lg border-green-500 text-green-500 flex gap-2 w-fit items-center">
+                        {strategy.calmarRatio}{" "}
+                        <i className="text-lg">
+                          <IoTrendingUp />
+                        </i>
                       </span>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-b">
