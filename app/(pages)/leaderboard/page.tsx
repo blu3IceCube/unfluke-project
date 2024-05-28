@@ -2,7 +2,7 @@ import React from "react";
 
 const Leaderboard = () => {
   return (
-    <div className="">
+    <div className="w-full border">
       <h1>Basic Backtest</h1>
       <div>
         <table>
