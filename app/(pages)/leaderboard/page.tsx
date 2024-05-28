@@ -1,8 +1,9 @@
 import React from "react";
+import strategies from "../../../data";
 
 const Leaderboard = () => {
   return (
-    <div className="w-full border rounded-md px-10 pt-20">
+    <div className="w-full border rounded-md px-10 pt-12">
       <h1>Basic Backtest</h1>
       <div>
         <table className="table-auto pt-10">
@@ -18,6 +19,20 @@ const Leaderboard = () => {
               <th>Action</th>
             </tr>
           </thead>
+          <tbody>
+            {strategies.map((strategy) => (
+              <tr key={strategy.rank}>
+                <td>{strategy.rank}</td>
+                <td>{strategy.name}</td>
+                <td>{strategy.calmarRatio}</td>
+                <td>{strategy.overallProfit}</td>
+                <td>{strategy.avgDailyProfit}</td>
+                <td>{strategy.winPercentage}</td>
+                <td>{strategy.price}</td>
+                <td>{strategy.action}</td>
+              </tr>
+            ))}
+          </tbody>
         </table>
       </div>
     </div>
