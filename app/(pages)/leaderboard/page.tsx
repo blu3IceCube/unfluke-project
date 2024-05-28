@@ -2,10 +2,10 @@ import React from "react";
 
 const Leaderboard = () => {
   return (
-    <div className="w-full border rounded-md p-5">
+    <div className="w-full border rounded-md px-10 pt-20">
       <h1>Basic Backtest</h1>
       <div>
-        <table className="table-auto">
+        <table className="table-auto pt-10">
           <thead>
             <tr>
               <th>Rank</th>
