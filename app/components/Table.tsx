@@ -3,7 +3,7 @@ import React from "react";
 
 const Table = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-full">
       <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
         <div className="py-2 inline-block min-w-full sm:px-6 lg:px-8">
           <div className="overflow-hidden shadow-md sm:rounded-lg">
@@ -41,10 +41,7 @@ const Table = () => {
               </thead>
               <tbody>
                 {strategies.map((user, idx) => (
-                  <tr
-                    key={idx}
-                    className={idx % 2 === 0 ? "bg-white" : "bg-gray-50"}
-                  >
+                  <tr key={idx} className="divide-y">
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                       {user.name}
                     </td>
