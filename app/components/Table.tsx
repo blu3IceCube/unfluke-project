@@ -15,7 +15,7 @@ const Table = () => {
               type="radio"
               name="slippage"
               value="0%"
-              checked
+              defaultChecked
             />
             0%
           </label>
