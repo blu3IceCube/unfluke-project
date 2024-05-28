@@ -12,49 +12,49 @@ const Table = () => {
                 <tr>
                   <th
                     scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider"
                   >
                     Rank
                   </th>
                   <th
                     scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider"
                   >
                     Name
                   </th>
                   <th
                     scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider"
                   >
                     Calmar Ratio
                   </th>
                   <th
                     scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider"
                   >
                     Overall Profit
                   </th>
                   <th
                     scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider"
                   >
                     Avg. Daily Profit
                   </th>
                   <th
                     scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider"
                   >
                     Win %(Day)
                   </th>
                   <th
                     scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider"
                   >
                     Price (Rs)
                   </th>
                   <th
                     scope="col"
-                    className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                    className="px-6 py-3 text-left text-xs font-semibold uppercase tracking-wider"
                   >
                     Action
                   </th>
@@ -84,7 +84,7 @@ const Table = () => {
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 border-b">
                       {strategy.price}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium border-b">
+                    <td className="px-6 py-4 whitespace-nowrap text-left text-sm font-medium border-b">
                       <a
                         href="#"
                         className="text-indigo-600 hover:text-indigo-900"
