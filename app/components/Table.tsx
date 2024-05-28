@@ -7,17 +7,17 @@ const Table = () => {
     <div className="flex flex-col w-full border p-5 rounded-lg mb-[250px]">
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-semibold pb-4">Basic Backtest</h1>
-        <div>
+        <div className="flex items-center gap-6">
           <label>
-            <input type="radio" name="slippage" value="0%" />
+            <input className="mx-2" type="radio" name="slippage" value="0%" />
             0%
           </label>
           <label>
-            <input type="radio" name="slippage" value="0.5%" />
+            <input className="mx-2" type="radio" name="slippage" value="0.5%" />
             0.5%
           </label>
           <label>
-            <input type="radio" name="slippage" value="1%" />
+            <input className="mx-2" type="radio" name="slippage" value="1%" />
             1%
           </label>
         </div>
